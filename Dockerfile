@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:14.04
+FROM ubuntu:20.04
 
 # Install.
 RUN \
@@ -29,4 +29,8 @@ ENV HOME /root
 WORKDIR /root
 
 # Define default command.
+EXPOSE 25500
+EXPOSE 80
+EXPOSE 8080
+EXPOSE 443
 CMD ["bash"]
